@@ -21,7 +21,9 @@ app.get("/", (req, res) =>
 );
 
 app.use("/account", accountRoutes);
+
 app.use("/services", servicesRoutes);
+
 app.get("/profile", (req, res) => {
   res.render("profile", { user: users[0] });
 });
