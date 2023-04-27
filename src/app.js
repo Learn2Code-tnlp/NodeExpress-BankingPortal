@@ -5,7 +5,7 @@ const res = require("express/lib/response");
 
 const app = express();
 
-const { accounts, users, writeJSON } = require("./data");
+const { accounts, users } = require("./data");
 const accountRoutes = require("./routes/accounts");
 const servicesRoutes = require("./routes/services");
 
